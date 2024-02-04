@@ -11,7 +11,6 @@
     const getImage = async () => {
       try {
         const randomPageNumber = Math.floor(Math.random() * 60) + 1;
-        console.log(randomPageNumber);
         const response = await axios.get(
           `https://picsum.photos/v2/list?page=${randomPageNumber}&limit=15`
         );
